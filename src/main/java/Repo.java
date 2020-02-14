@@ -26,5 +26,17 @@ public class Repo {
         return repoType;
     }
 
+    public void gitCommit(Commit commit) {
+        this.commits.add(commit);
+    }
+
+    public int commitCount() {
+        return this.commits.size();
+    }
+
+//    get a commit by its uniqueId
+
+//     get the repository with the most commits
+
 
 }

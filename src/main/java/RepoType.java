@@ -1,4 +1,4 @@
 public enum RepoType {
-    FREE,
+    PUBLIC,
     PRIVATE
 }

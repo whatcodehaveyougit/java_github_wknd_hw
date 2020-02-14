@@ -27,8 +27,25 @@ public class Account {
         return accountType;
     }
 
-//    public ArrayList<Repo> getRepositories() {
-//        return repositories;
+    public void addRepoToAccount(Repo repo) {
+        this.repositories.put(repo.getName(), repo);
+    }
+
+    public int getNumberOfRepos() {
+        return this.repositories.size();
+    }
+
+    public Repo getRepoByKey(String key) {
+        return repositories.get(key);
+    }
+//
+//    public Repo returnRepoWithMostCommits() {
+//        return
+//    }
+
+
+//    public Repo getRepoByName(String repoName){
+//
 //    }
 
 
