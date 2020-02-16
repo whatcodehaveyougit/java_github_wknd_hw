@@ -26,13 +26,28 @@ public class Repo {
         return repoType;
     }
 
-    public void gitCommit(Commit commit) {
-        this.commits.add(commit);
+    public ArrayList getArrayListOfGitCommits(){
+        return this.commits;
     }
+
+    public int getNumberOfGitCommitsInRepo() {
+        return this.commits.size();
+    }
+
 
     public int commitCount() {
         return this.commits.size();
     }
+
+    public void gitCommit(Commit commit) {
+        this.commits.add(commit);
+    }
+
+    public String getFirstCommitDescriptionFromRepo() {
+        return this.commits.get(0).getDescription();
+    }
+
+
 
 //    get a commit by its uniqueId
 

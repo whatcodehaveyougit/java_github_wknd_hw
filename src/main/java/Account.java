@@ -1,5 +1,8 @@
+import sun.tools.jconsole.Tab;
+
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Account {
 
@@ -31,23 +34,56 @@ public class Account {
         this.repositories.put(repo.getName(), repo);
     }
 
-    public int getNumberOfRepos() {
+    public int getNumberOfReposInAccount() {
         return this.repositories.size();
     }
 
     public Repo getRepoByKey(String key) {
         return repositories.get(key);
     }
-//
-//    public Repo returnRepoWithMostCommits() {
-//        return
+
+    public int getNumberOfGitCommitsInRepo(Repo repo) {
+        return repo.getNumberOfGitCommitsInRepo();
+    }
+
+    public int countReposInAccount() {
+        int counter;
+        counter = 0;
+        for (Map.Entry me : this.repositories.entrySet()) {
+            counter++;
+        }
+        return counter;
+    }
+
+    public void returnNumberOfCommitsInEachRepo() {
+    for (Map.Entry<String, Repo> entry : entries) {
+            entry.getValue();
+        }
+
+//    public void returnNumberOfCommitsInEachRepo() {
+//        for (Map.Entry me : this.repositories.entrySet()) {
+//            Repo repo;
+//            repo = me.getValue();
+//            System.out.println("Value: " + me.getValue());
+//        }
 //    }
 
-
-//    public Repo getRepoByName(String repoName){
-//
+//    public void returnNumberOfCommitsInEachRepo() {
+//        for ( Repo repo : this.repositories.values()) {
+//            System.out.println( repo.getNumberOfGitCommitsInRepo());
+//        }
 //    }
 
+//    public String returnRepoWithMostCommits() {
+//        Repo repo;
+//        for (Map.Entry me : this.repositories.entrySet()) {
+//            if (this.getNumberOfGitCommitsInRepo(this.repositories)) > repo {
+//                repo = this.repositories;
+//            }
+//        }
+//    }
 
+    public static void main(String[] args) {
 
+    }
 }

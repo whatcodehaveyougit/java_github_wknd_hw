@@ -1,11 +1,24 @@
 public class Commit {
 
-    private String uniqueId;
+    private int uniqueId;
     private String description;
 
-
-    public Commit(String uniqueId, String description ) {
+    public Commit(int uniqueId, String description ) {
         this.uniqueId = uniqueId;
         this.description = description;
     }
+
+    public int getUniqueId() {
+        return uniqueId;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+//    public void createCommit(id, description)
+//
+
+
+
 }

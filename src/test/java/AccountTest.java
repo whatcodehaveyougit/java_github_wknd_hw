@@ -18,45 +18,72 @@ public class AccountTest {
         account = new Account("whatcodehaveyougit", "Sigurd", AccountType.FREE);
         repo = new Repo("test","a test", RepoType.PUBLIC);
         repo1 = new Repo("test1","a test1", RepoType.PUBLIC);
-        commit = new Commit("0", "Test");
-        commit1 = new Commit("1", "Test1");
+        commit = new Commit(0, "Test");
+        commit1 = new Commit(1, "Test1");
     }
 
     @Test
-    public void account_has_name() {
+    public void get_account_name() {
         assertEquals("whatcodehaveyougit", account.getUsername());
     }
 
     @Test
-    public void account_has_username() {
+    public void get_account_username() {
         assertEquals("Sigurd", account.getName());
     }
 
     @Test
-    public void account_has_account_type() {
+    public void get_account_type() {
         assertEquals(AccountType.FREE, account.getAccountType());
+    }
+
+    @Test
+    public void get_repo_by_key() {
+        account.addRepoToAccount(repo);
+        assertEquals(repo, account.getRepoByKey("test"));
     }
 
     @Test
     public void can_add_repo_to_account() {
         account.addRepoToAccount(repo);
         account.addRepoToAccount(repo1);
-        assertEquals(2, account.getNumberOfRepos());
+        assertEquals(2, account.getNumberOfReposInAccount());
     }
 
     @Test
-    public void can_get_repo_by_key() {
+    public void can_return_number_of_git_commits_in_a_repo() {
         account.addRepoToAccount(repo);
-        assertEquals(repo, account.getRepoByKey("test"));
+        repo.gitCommit(commit);
+        repo.gitCommit(commit);
+        assertEquals(2, account.ge(repo));
     }
 
     @Test
-    public void get_repo_with_most_commits() {
+    public void can_count_the_repos_in_a_hashmap() {
+        account.addRepoToAccount(repo);
+        account.addRepoToAccount(repo1);
+        assertEquals(2,  account.countReposInAccount());
+    }
+
+    @Test
+    public void return_number_of_commits_in_each_repo() {
+        account.addRepoToAccount(repo);
+        account.addRepoToAccount(repo1);
         repo.gitCommit(commit);
         repo1.gitCommit(commit);
         repo1.gitCommit(commit);
-        assertEquals("test1",  account.returnRepoWithMostCommits().getName());
+        account.returnNumberOfCommitsInEachRepo();
     }
+
+//    @Test
+//    public void get_repo_with_most_commits() {
+//        account.addRepoToAccount(repo);
+//        account.addRepoToAccount(repo1);
+//        repo.gitCommit(commit);
+//        repo1.gitCommit(commit);
+//        repo1.gitCommit(commit);
+//        assertEquals(repo.getName(),  account.returnRepoWithMostCommits());
+//    }
 
 
 

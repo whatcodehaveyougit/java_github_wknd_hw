@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcddcbfe-187a-49c2-8caa-56d5a8404ba5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CommitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccountType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Commit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RepoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RepoType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RepoTest.java" afterDir="false" />
     </list>
@@ -48,51 +46,52 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest.can_get_repo_by_key">
-    <configuration name="AccountTest.can_add_repo_to_account" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountTest.return_number_of_commits_in_each_repo">
+    <configuration name="AccountTest.can_count_the_repos_in_a_hashmap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gitHub" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AccountTest" />
-      <option name="METHOD_NAME" value="can_add_repo_to_account" />
+      <option name="METHOD_NAME" value="can_count_the_repos_in_a_hashmap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.can_get_repo_by_key" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.can_return_array_list_of_git_commits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gitHub" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AccountTest" />
-      <option name="METHOD_NAME" value="can_get_repo_by_key" />
+      <option name="METHOD_NAME" value="can_return_array_list_of_git_commits" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.can_return_number_of_git_commits_in_a_repo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gitHub" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RepoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepoTest.repo_can_git_commit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gitHub" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RepoTest" />
-      <option name="METHOD_NAME" value="repo_can_git_commit" />
+      <option name="MAIN_CLASS_NAME" value="AccountTest" />
+      <option name="METHOD_NAME" value="can_return_number_of_git_commits_in_a_repo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepoTest.repo_has_type" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.return_number_of_commits_in_each_repo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gitHub" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccountTest" />
+      <option name="METHOD_NAME" value="return_number_of_commits_in_each_repo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepoTest.get_number_of_git_commits_in_repo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gitHub" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RepoTest" />
-      <option name="METHOD_NAME" value="repo_has_type" />
+      <option name="METHOD_NAME" value="get_number_of_git_commits_in_repo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountTest.can_get_repo_by_key" />
-        <item itemvalue="JUnit.RepoTest" />
-        <item itemvalue="JUnit.RepoTest.repo_can_git_commit" />
-        <item itemvalue="JUnit.RepoTest.repo_has_type" />
-        <item itemvalue="JUnit.AccountTest.can_add_repo_to_account" />
+        <item itemvalue="JUnit.AccountTest.return_number_of_commits_in_each_repo" />
+        <item itemvalue="JUnit.AccountTest.can_count_the_repos_in_a_hashmap" />
+        <item itemvalue="JUnit.AccountTest.can_return_number_of_git_commits_in_a_repo" />
+        <item itemvalue="JUnit.AccountTest.can_return_array_list_of_git_commits" />
+        <item itemvalue="JUnit.RepoTest.get_number_of_git_commits_in_repo" />
       </list>
     </recent_temporary>
   </component>
@@ -126,33 +125,53 @@
       <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="439" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.810@0.23.1440.810" timestamp="1581680610539" />
-    <state x="533" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1581684380185">
+    <state x="533" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1581693582520">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="533" y="136" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1581684380185" />
-    <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1581690966684">
-      <screen x="0" y="23" width="1440" height="810" />
+    <state x="533" y="136" key="#com.intellij.ide.util.MemberChooser/0.23.1440.810@0.23.1440.810" timestamp="1581693582520" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1581883236638">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1581690966684" />
-    <state width="1398" height="208" key="GridCell.Tab.0.center" timestamp="1581690966682">
-      <screen x="0" y="23" width="1440" height="810" />
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1581695397398" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581883236638" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1581883236635">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1581690966682" />
-    <state width="1398" height="208" key="GridCell.Tab.0.left" timestamp="1581690966681">
-      <screen x="0" y="23" width="1440" height="810" />
+    <state width="1398" height="208" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1581695397396" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581883236635" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1581883236631">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1581690966681" />
-    <state width="1398" height="208" key="GridCell.Tab.0.right" timestamp="1581690966683">
-      <screen x="0" y="23" width="1440" height="810" />
+    <state width="1398" height="208" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1581695397395" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581883236631" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1581883236636">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1581690966683" />
+    <state width="1398" height="208" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1581695397397" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581883236636" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1581769585727">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581769585727" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1581769585725">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581769585725" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1581769585724">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581769585724" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1581769585726">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/1440.-167.1440.900/0.0.1440.900@0.0.1440.900" timestamp="1581769585726" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Account.java</url>
-          <line>10</line>
+          <line>13</line>
           <properties class="Account" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
           </properties>
